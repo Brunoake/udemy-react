@@ -10,7 +10,7 @@ function App() {
   
 
   return (
-    <div className='app'>
+    <div className='app' style={{paddingBottom: "500px"}}>
       <h1>avançando com react</h1>
       {/* {imagem em public} */}
       <img src="/img.jpg" alt="imagem public" />
@@ -20,6 +20,7 @@ function App() {
 
       {/* {Usestate} */}
       <Data/>
+      <button onClick={() => (someData = 15;)}>Mudar variavel</button>
     </div>
   )
 }
