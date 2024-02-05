@@ -3,6 +3,9 @@ import './App.css'
 
  {/* {imagem com assets} */}
 import motor from "./assets/img2.jpg";
+
+import Data from './components/Data';
+
 function App() {
   
 
@@ -14,6 +17,9 @@ function App() {
 
       {/* {imagem com assets} */}
       <img src={motor} alt="motor " />
+
+      {/* {Usestate} */}
+      <Data/>
     </div>
   )
 }
