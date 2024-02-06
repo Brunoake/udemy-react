@@ -6,6 +6,8 @@ import motor from "./assets/img2.jpg";
 
 import Data from './components/Data';
 
+import ListRender from './components/ListRender';
+
 function App() {
   
 
@@ -20,7 +22,8 @@ function App() {
 
       {/* {Usestate} */}
       <Data/>
-      <button onClick={() => (someData = 15;)}>Mudar variavel</button>
+      {/* {lista} */}
+      <ListRender/>
     </div>
   )
 }
