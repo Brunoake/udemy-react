@@ -8,6 +8,16 @@ import Data from './components/Data';
 
 import ListRender from './components/ListRender';
 
+import ConditionalRender from './components/ConditionalRender';
+
+// Props
+
+import ShowUserName from './components/ShowUserName';
+
+// Desestruturando props
+
+import CarDetails from './components/CarDetails';
+
 function App() {
   
 
@@ -24,6 +34,17 @@ function App() {
       <Data/>
       {/* {lista} */}
       <ListRender/>
+
+      {/*render condicional*/}
+      <ConditionalRender/>
+
+      {/* Props */}
+      <ShowUserName name= "Bruno"/>
+
+      {/* Desestruturando props */}
+      <CarDetails brand = "bmw" km={130}
+      color="blu glaucco" model="m3 competition"/>
+      
     </div>
   )
 }
