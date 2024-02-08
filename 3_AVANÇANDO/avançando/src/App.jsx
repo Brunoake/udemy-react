@@ -34,8 +34,9 @@ import Container from './components/Container.jsx';
 // Função
 
 import ExecutionFunction from './components/ExecutionFunction.jsx';
-
-import message from './components/Message.jsx';
+import { useState } from 'react';
+import Message from './components/message.jsx';
+import ChangeMessage from './components/ChangeMessage.jsx';
 
 function App() {
   
@@ -104,6 +105,8 @@ function App() {
 
         <ExecutionFunction myFunction={showMassage}/>
 
+        <Message msg={message}/>
+        <ChangeMessage handleMessage={handleMessage}/>
     </div>
   )
 }
