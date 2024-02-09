@@ -10,15 +10,25 @@ const MyForm = () => {
         setName(e.target.value);
     }
 
+    // Envio de form
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(name, email);
+    }
+
     console.log(name, email)
   return (
     <div>
-        <form>
+        {/* Envio de formulario */}
+        <form onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="name">Nome:</label>
                 <input 
                 type="text"
-                 name="name" placeholder="Digite seu nome" onChange={handleName}
+                 name="name" placeholder="Digite seu nome"
+                  onChange={handleName}
+                //   Controled input
+                value={name || ""}
                 />
             </div>
 
@@ -30,8 +40,9 @@ const MyForm = () => {
                 type="email"
                  name="email"
                   placeholder="Digite seu email"
-                 required
+                 
                   onChange={(e) => setEmail(e.target.value)}
+                  value={email || ""}
                   />
             </label>
 
