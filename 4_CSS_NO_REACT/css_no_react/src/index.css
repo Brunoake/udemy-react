@@ -7,3 +7,12 @@
 body{
   padding-bottom: 500px;
 }
+
+/* CLasse dinamica */
+
+.red-title {
+  font-size: 50px;
+  color: red;
+  background-color: #000;
+  text-align: center;
+}
