@@ -3,17 +3,17 @@
     {
       "name": "capa de chuva",
       "price": "50.50",
-      "id": 5
+      "id": "5"
     },
     {
       "name": "teclado",
       "price": "500",
-      "id": 6
+      "id": "6"
     },
     {
       "name": "cadeira",
       "price": "1595",
-      "id": 7
+      "id": "7"
     },
     {
       "id": "5898",
@@ -59,6 +59,11 @@
       "id": "2041",
       "name": "cadeira",
       "price": "130"
+    },
+    {
+      "id": "8dfa",
+      "name": "teste",
+      "price": "50"
     }
   ]
 }
