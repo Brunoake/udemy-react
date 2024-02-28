@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 // Pagina de erro
-import ErrorPage from '../routes/ErrorPage.jsx';
+import ErrorPage from './routes/ErrorPage.jsx';
 
-import Contact from '../routes/Contact';
+import Contact from './routes/Contact';
 
 // Componente base
-import Home from '../routes/Home.jsx';
+import Home from './routes/Home.jsx';
 
 // Configurando router
 import {

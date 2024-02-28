@@ -2,12 +2,12 @@ import React from 'react'
 
 // Carregamentos de dado
 
-import {useFetch} from "../src/hooks/useFetch"
+import {useFetch} from "../hooks/useFetch"
 
 const url = "http://localhost:3000/products"
 
 const Home = () => {
-  const {data, items} = useFetch(url)
+  const {data: items} = useFetch(url)
 
 
   return (
@@ -20,8 +20,8 @@ const Home = () => {
           <h2>{item.name}</h2>
           <p>R$: {item.price}</p>
         </li>
-      ))}
-    </ul>
+      ))};
+    </ul> 
     </div>
   )
 }
