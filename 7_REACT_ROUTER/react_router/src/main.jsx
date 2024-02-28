@@ -7,6 +7,9 @@ import ErrorPage from './routes/ErrorPage.jsx'
 
 import Contact from './routes/Contact'
 
+// Componente base
+import Home from './routes/Home.jsx'
+
 // Configurando router
 import {
   createBrowserRouter,
@@ -18,12 +21,22 @@ const router = createBrowserRouter([
 {
   path: "/",
   element: <App/>,
-  errorElement: <ErrorPage/>
-},
-{
-  path: "contact",
-  element: <Contact/>,
+  errorElement: <ErrorPage/>,
+  // Componente base
+  children: [
+    {path: "/",
+    element: <Home/>,
+    },
+  {
+    path: "contact",
+    element: <Contact/>
 }
+]
+},
+// {
+//   path: "contact",
+//   element: <Contact/>,
+// }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
