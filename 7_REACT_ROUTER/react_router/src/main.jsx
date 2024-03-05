@@ -19,6 +19,9 @@ import Info from './routes/Info.jsx';
 // Search
 import Search from './routes/Search.jsx';
 
+// Navigate
+import { Navigate } from 'react-router-dom';
+
 
 // Configurando router
 import {
@@ -56,6 +59,11 @@ const router = createBrowserRouter([
 {
 path: "search",
 element: <Search/>,
+},
+// Redirect
+{
+  path: "teste",
+  element: <Navigate to="/"/>
 }
 ],
 },
