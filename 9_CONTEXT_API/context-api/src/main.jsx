@@ -11,6 +11,9 @@ import Home from './routes/Home.jsx';
 // Criando o provider
 import { CounterContextProvider } from './context/CounterContext.jsx';
 
+// Contexto mais complexo
+import { TitleColorContextProvider } from './context/TitleColorContext.jsx';
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -37,7 +40,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
      <CounterContextProvider>
-    < RouterProvider router={router}/>
+      <TitleColorContextProvider>
+      < RouterProvider router={router}/>
+      </TitleColorContextProvider>
     </CounterContextProvider>
   </React.StrictMode>,
 )
