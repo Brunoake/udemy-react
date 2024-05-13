@@ -28,6 +28,16 @@ useEffect(() => {
 
 }, [anotherNumber])
 
+// cleanup do UseEffect
+
+useEffect(() =>{
+  const Timer = setTimeout(() => {
+    console.log("Hello world")
+    setAnotherNumber(anotherNumber + 1)
+  }, 2000);
+  return() => clearTimeout(Timer)
+}, [anotherNumber]);
+
   return (
     <div>
       <h2>use Effect</h2> 
